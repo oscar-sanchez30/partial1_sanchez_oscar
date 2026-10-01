@@ -8,20 +8,43 @@
     <title>EVALUATION PARTIAL 1</title>
 
     <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin: 20px;
-            color: #222;
+            margin: 0;
+            padding: 30px;
+            color: #030303;
+            background: #7b7676;
         }
 
         h2 a {
-            color: purple;
-            font-size: 20px;
+            color: #6a1b9a;
+            font-size: 22px;
+            text-decoration: none;
+            font-weight: bold;
         }
+
+        h2 a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* =========================
+           TÍTULOS
+        ========================= */
 
         h3 {
             font-size: 18px;
+            margin-top: 25px;
         }
 
         .menu {
@@ -29,69 +52,202 @@
             flex-direction: column;
             align-items: center;
             gap: 12px;
-            margin: 20px;
+            margin: 25px auto;
         }
 
         .menu button {
-            text-decoration: none;
-            border: 1px solid #555;
-            background: #eee;
-            color: black;
-            padding: 10px 18px;
-            font-size: 13px;
+            width: 320px;
+            max-width: 90%;
+
+            border: none;
+            border-radius: 8px;
+
+            background: #333;
+            color: white;
+
+            padding: 13px 18px;
+
+            font-size: 14px;
+            font-weight: bold;
+
             cursor: pointer;
+
+            transition: 0.3s;
         }
 
         .menu button:hover {
-            background: #ccc;
+            background: #6a1b9a;
+            transform: scale(1.03);
         }
 
         .student {
-            margin: 35px 0;
+            background: white;
+
+            width: 500px;
+            max-width: 95%;
+
+            margin: 45px auto;
+
+            padding: 35px 25px;
+
+            border-radius: 18px;
+
+            box-shadow:
+                0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .profile-image {
+            width: 400px;
+            height: 400px;
+
+            max-width: 100%;
+
+            object-fit: cover;
+
+            border-radius: 50%;
+
+            border: 5px solid white;
+
+            box-shadow:
+                0 5px 20px rgba(0, 0, 0, 0.25);
+
+            display: block;
+
+            margin: 0 auto 25px auto;
+
+            transition: 0.3s;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.02);
+        }
+
+        .student h3 {
+            color: #666;
+            font-size: 17px;
+            margin-bottom: 10px;
         }
 
         .student h1 {
-            font-size: 28px;
+            font-size: 27px;
+            margin: 10px 0;
+            color: #222;
         }
 
+        .student p {
+            color: #666;
+            font-size: 15px;
+            word-break: break-word;
+        }
         .diagram {
             margin: 30px auto;
-            padding-top: 20px;
+
+            padding: 20px;
+
+            background: white;
+
+            border-radius: 15px;
+
+            box-shadow:
+                0 4px 15px rgba(0, 0, 0, 0.10);
+        }
+
+        .diagram h2 {
+            color: #333;
+            margin-bottom: 20px;
         }
 
         iframe {
             width: 100%;
             border: none;
+            border-radius: 10px;
+            background: white;
         }
+
+
+        /* =========================
+           BOTÓN VOLVER
+        ========================= */
 
         .back {
             display: inline-block;
-            margin: 20px;
-            color: purple;
+
+            margin: 25px;
+
+            padding: 10px 20px;
+
+            color: white;
+
+            background: #6a1b9a;
+
+            border-radius: 7px;
+
             cursor: pointer;
+
+            font-weight: bold;
+
+            text-decoration: none;
+
+            transition: 0.3s;
+        }
+
+        .back:hover {
+            background: #4a126d;
+            transform: scale(1.03);
         }
 
         .hidden {
             display: none;
         }
 
-        html {
-            scroll-behavior: smooth;
+
+        @media (max-width: 600px) {
+
+            body {
+                padding: 15px;
+            }
+
+            .profile-image {
+                width: 280px;
+                height: 280px;
+            }
+
+            .student h1 {
+                font-size: 21px;
+            }
+
+            .menu button {
+                width: 280px;
+            }
+
+            .diagram {
+                padding: 10px;
+            }
         }
     </style>
 </head>
 
+
 <body>
 
-    <!-- MENU PRINCIPAL -->
 
     <div id="inicio">
 
+        <!-- PLAY MARIO -->
+
         <h2>
-            <a href="mario.html">PLAY MARIO</a>
+            <a href="mario/index.html">
+                🎮 PLAY MARIO
+            </a>
         </h2>
 
-        <h3>FLOWCHART SECTION</h3>
+
+        <!-- FLOWCHART SECTION -->
+
+        <h3>
+            FLOWCHART SECTION
+        </h3>
+
 
         <div class="menu">
 
@@ -108,7 +264,9 @@
             </button>
 
 
-            <h3>USE CASE DIAGRAM</h3>
+            <h3>
+                USE CASE DIAGRAM
+            </h3>
 
             <button onclick="mostrarDiagrama('casos')">
                 USE CASE DIAGRAM
@@ -117,23 +275,30 @@
         </div>
 
         <section class="student">
+            <img src="./perfil.jpeg" alt="Foto de Oscar Sanchez Rodriguez" class="profile-image">
 
-            <h3>STUDENT:</h3>
+            <h3>
+                STUDENT:
+            </h3>
 
-            <h1>OSCAR SANCHEZ RODRIGUEZ</h1>
+            <h1>
+                OSCAR SANCHEZ RODRIGUEZ
+            </h1>
 
             <p>
-                EMAIL: oscarsanchezrodriguez51@gmail.com
+                EMAIL:
+                oscarsanchezrodriguez51@gmail.com
             </p>
 
         </section>
 
     </div>
 
-
     <section id="idea" class="diagram hidden">
 
-        <h2>IDEA DE NEGOCIO</h2>
+        <h2>
+            IDEA DE NEGOCIO
+        </h2>
 
         <iframe
             frameborder="0"
@@ -147,10 +312,11 @@
 
     </section>
 
-
     <section id="clientes" class="diagram hidden">
 
-        <h2>CLIENTES</h2>
+        <h2>
+            CLIENTES
+        </h2>
 
         <iframe
             frameborder="0"
@@ -164,15 +330,16 @@
 
     </section>
 
-
     <section id="negocio" class="diagram hidden">
 
-        <h2>NEGOCIO</h2>
+        <h2>
+            NEGOCIO
+        </h2>
 
         <iframe
             frameborder="0"
             style="width:100%;height:853px;"
-            src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=#R%3Cmxfile%3E%3Cdiagram%20id%3D%22wwhSoOHh-2CoQzHCV8MD%22%20name%3D%22P%C3%A1gina-1%22%3E7Zpdk5owFIZ%2FjZft8CGolymylhnFHXDbtXcUUmUGwUFctb%2B%2BQYIQDtZPhN3ZGyWHr%2FC87wkn0ZaoLLaD0FrOR4GDvZbAOduW2G8JgtzhyWcc2CUBvstxSWQWug6NZQHT%2FYtpMD1s7Tp4xRwYBYEXuUs2aAe%2Bj%2B2IiVlhGGzYw%2F4EHnvXpTXDIGDalgejP10nmifRrtDJ4t%2BxO5und%2BblXrJnYaUH0ydZzS0n2ORCotoSlTAIomRrsVWwF8NLuSTnPR3Ze%2BhYiP3onBOE5IQ3y1vTZ9N0TdHGtHfRLn1kchqhSxrfNnM3wubSsuM9GyIwic2jhUdaPNmkF8RhhLdHO8UfHpV4BAcLHIU7cgg9QUjtQP0h0eYmYy3T0DyHWaQxi6o7O1w4A0A2KINyHiLg0dfQwEAjRKLPyIi%2FFDRUXobIIJuaPjBUc2ySzb5KPobx%2FhEyFAQAEhwRS8ry3JlPtm2CBYckEENzicsQ3bFwHcc7hjwM1r6D425zd6IuthnqX3iInWRqNdzbgLuhDjRzYuwx%2F1D1CSTKEqjelnyHtSUvlAASSgDJdwAkAUDjbxNVV2M8z4a6T1luunenPtH6qN84XEKZn6rCJQNcuaydjCdomKZsM70lcg%2BE1QGwJhqx1p6QqbwQQOOW%2BAQZzYPF7%2FXqQXwkhk%2B7jA9fwucA7RZAXQDI1N7fAC%2BK3EmGVb1Xe4CgDmuMxhNs1wcw9XZ%2BRBuTkV5%2FiYe0mkevgrEkEXKpqnDgecAlXzlourGvG0pHxBcYpW%2F0%2FADGlUBq3wMSLPORMnlBQ%2B1XvoxtACR2lJdLKqxeVYxg6T8apzYaIB3piobM2hEJPbZK7zyyUOBhmf6k6bUzKb7YuiWVZmXjMizMAQ%2FsOyhedSAtP%2FAx%2B%2Fx460avMaqvEm1Nc3v6W0px39gxrzLsgFWKAjHSi2Ad2szqCaSYoySVUEpjIfasyH1jb1mGjt7hOXBJZzLjyqxIcrdAP%2BkqPUvILVkULlSolLtFFSMrnOEIXGcv5OGpz9MWziL%2Bp63tWauVaxfk9cntXlMR48Y0EztuZgrvW5dLnDxvPkHrkviUMucqXHxXyhVKDOc%2BV6ZvLnmzVL5n%2BnaalL0Sf6W2EnuddvG1dEdp4ZzjhuzNEnbK5Otds7fWAfqUMtdmb4USp3XOzdnLf2bvedp2HqctnNg1PX2PVKmP0fikNE3MXzgvvVzjK%2Brn6n3B1N1lXhE%2BxnjwQK%2FA%2BflH9IpQ4hWxSV65et72wKq%2B5OfEj%2BgVscQrtU4A36VX7jHJb7xXSoaVRjnl8FPKrU4RpeqcctlawTt1Shs6Rfp0yoVOgT8YP8Qp1ykuQcXlT8UvVPwei02NHxtk6JRGrWs00Cmkmf2bMzk8%2B0%2BsqP4D%3C%2Fdiagram%3E%3C%2Fmxfile%3E">
+            src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=#R%3Cmxfile%3E%3Cdiagram%20id%3D%22wwhSoOHh-2CoQzHCV8MD%22%20name%3D%22P%C3%A1gina-1%22%3E7Zpdk5owFIZ%2FjZft8CGolymylhnFHXDbtXcUUmUGwUFctb%2B%2BQYIQDtZPhN3ZGyWHr%2FC87wkn0ZaoLLaD0FrOR4GDvZbAOduW2G8JgtzhyWcc2CUBvstxSWQWug6NZQHT%2FYtpMD1s7Tp4xRwYBYEXuUs2aAe%2Bj%2B2IiVlhGGzYw%2F4EHnvXpTXDIGDalgejP10nmifRrtDJ4t%2BxO5und%2BblXrJnYaUH0ydZzS0n2ORCotoSlTAIomRrsVWwF8NLuSTnPR3Ze%2BhYiP3onBOE5IQ3y1vTZ9N0TdHGtHfRLn1kchqhSxrfNnM3wubSsuM9GyIwic2jhUdaPNmkF8RhhLdHO8UfHpV4BAcLHIU7cgg9QUjtQP0h0eYmYy3T0DyHWaQxi6o7O1w4A0A2KINyHiLg0dfQwEAjRKLPyIi%2FFDRUXobIIJuaPjBUc2ySzb5KPobx%2FhEyFAQAEhwRS8ry3JlPtm2CBYckEENzicsQ3bFwHcc7hjwM1r6D425zd6IuthnqX3iInWRqNdzbgLuhDjRzYuwx%2F1D1CSTKEqjelnyHtSUvlAASSgDJdwAkAUDjbxNVV2M8z4a6T1luunenPtH6qN84XEKZn6rCJQNcuaydjCdomKZsM70lcg%2BE1QGwJhqx1p6QqbwQQOOW%2BAQZzYPF7%2FXqQXwkhk%2B7jA9fwucA7RZAXQDI1N7fAC%2BK3EmGVb1Xe4CgDmuMxhNs1wcw9XZ%2BRBuTkV5%2FiYe0mkevgrEkEXKpqnDgecAlXzlourGv0OpHxBcYpW%2F0%2FADGlUBq3wMSLPORMnlBQ%2B1XvoxtACR2lJdLKqxeVYxg6T8apzYaIB3piobM2hEJPbZK7zyyUOBhmf6k6bUzKb7YuiWVZmXjMizMAQ%2FsOyhedSAtP%2FAx%2B%2Fx460avMaqvEm1Nc3v6W0px39gxrzLsgFWKAjHSi2Ad2szqCaSYoySVUEpjIfasyH1jb1mGjt7hOXBJZzLjyqxIcrdAP%2BkqPUvILVkULlSolLtFFSMrnOEIXGcv5OGpz9MWziL%2Bp63tWauVaxfk9cntXlMR48Y0EztuZgrvW5dLnDxvPkHrkviUMucqXHxXyhVKDOc%2BV6ZvLnmzVL5n%2BnaalL0Sf6W2EnuddvG1dEdp4ZzjhuzNEnbK5Otds7fWAfqUMtdmb4USp3XOzdnLf2bvedp2HqctnNg1PX2PVKmP0fikNE3MXzgvvVzjK%2Brn6n3B1N1lXhE%2BxnjwQK%2FA%2BflH9IpQ4hWxSV65et72wKq%2B5OfEj%2BgVscQrtU4A36VX7jHJb7xXSoaVRjnl8FPKrU4RpeqcctlawTt1Shs6Rfp0yoVOgT8YP8Qp1ykuQcXlT8UvVPwei02NHxtk6JRGrWs00Cmkmf2bMzk8%2B0%2BsqP4D%3C%2Fdiagram%3E%3C%2Fmxfile%3E">
         </iframe>
 
         <a class="back" onclick="volverMenu()">
@@ -180,11 +347,11 @@
         </a>
 
     </section>
-
-
     <section id="casos" class="diagram hidden">
 
-        <h2>USE CASE DIAGRAM</h2>
+        <h2>
+            USE CASE DIAGRAM
+        </h2>
 
         <iframe
             frameborder="0"
@@ -197,40 +364,66 @@
         </a>
 
     </section>
-
-
     <script>
 
         function mostrarDiagrama(diagrama) {
+            document
+                .getElementById("inicio")
+                .classList
+                .add("hidden");
+            document
+                .getElementById("idea")
+                .classList
+                .add("hidden");
 
-            document.getElementById("inicio").classList.add("hidden");
+            document
+                .getElementById("clientes")
+                .classList
+                .add("hidden");
 
-            document.getElementById("idea").classList.add("hidden");
+            document
+                .getElementById("negocio")
+                .classList
+                .add("hidden");
 
-            document.getElementById("clientes").classList.add("hidden");
-
-            document.getElementById("negocio").classList.add("hidden");
-
-            document.getElementById("casos").classList.add("hidden");
-
-            document.getElementById(diagrama).classList.remove("hidden");
-
+            document
+                .getElementById("casos")
+                .classList
+                .add("hidden");
+            document
+                .getElementById(diagrama)
+                .classList
+                .remove("hidden");
             window.scrollTo(0, 0);
         }
 
 
         function volverMenu() {
 
-            document.getElementById("idea").classList.add("hidden");
+            document
+                .getElementById("idea")
+                .classList
+                .add("hidden");
 
-            document.getElementById("clientes").classList.add("hidden");
+            document
+                .getElementById("clientes")
+                .classList
+                .add("hidden");
 
-            document.getElementById("negocio").classList.add("hidden");
+            document
+                .getElementById("negocio")
+                .classList
+                .add("hidden");
 
-            document.getElementById("casos").classList.add("hidden");
+            document
+                .getElementById("casos")
+                .classList
+                .add("hidden");
 
-            document.getElementById("inicio").classList.remove("hidden");
-
+            document
+                .getElementById("inicio")
+                .classList
+                .remove("hidden");
             window.scrollTo(0, 0);
         }
 
