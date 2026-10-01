@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EVALUATION PARTIAL 1</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            color: #222;
+        }
+
+        h2 a {
+            color: purple;
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            margin: 20px;
+        }
+
+        .menu button {
+            text-decoration: none;
+            border: 1px solid #555;
+            background: #eee;
+            color: black;
+            padding: 10px 18px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .menu button:hover {
+            background: #ccc;
+        }
+
+        .student {
+            margin: 35px 0;
+        }
+
+        .student h1 {
+            font-size: 28px;
+        }
+
+        .diagram {
+            margin: 30px auto;
+            padding-top: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            border: none;
+        }
+
+        .back {
+            display: inline-block;
+            margin: 20px;
+            color: purple;
+            cursor: pointer;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MENU PRINCIPAL -->
+
+    <div id="inicio">
+
+        <h2>
+            <a href="mario.html">PLAY MARIO</a>
+        </h2>
+
+        <h3>FLOWCHART SECTION</h3>
+
+        <div class="menu">
+
+            <button onclick="mostrarDiagrama('idea')">
+                DIAGRAM 1 - IDEA DE NEGOCIO
+            </button>
+
+            <button onclick="mostrarDiagrama('clientes')">
+                DIAGRAM 2 - CLIENTES
+            </button>
+
+            <button onclick="mostrarDiagrama('negocio')">
+                DIAGRAM 3 - NEGOCIO
+            </button>
+
+
+            <h3>USE CASE DIAGRAM</h3>
+
+            <button onclick="mostrarDiagrama('casos')">
+                USE CASE DIAGRAM
+            </button>
+
+        </div>
+
+        <section class="student">
+
+            <h3>STUDENT:</h3>
+
+            <h1>OSCAR SANCHEZ RODRIGUEZ</h1>
+
+            <p>
+                EMAIL: oscarsanchezrodriguez51@gmail.com
+            </p>
+
+        </section>
+
+    </div>
+
+
+    <section id="idea" class="diagram hidden">
+
+        <h2>IDEA DE NEGOCIO</h2>
+
+        <iframe
+            frameborder="0"
+            style="width:100%;height:1283px;"
+            src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=#R%3Cmxfile%3E%3Cdiagram%20id%3D%22BCngighClIfuXvzLYGhf%22%20name%3D%22P%C3%A1gina-1%22%3E3Vxtc6JIEP41qbr7knKA4eUjUeKyZcRTc7u5b6xySpVKCkli7tffICDM9JgoDkzcrdoEGhnleaa7n%2B4Zc6N217t%2B7D8vH6J5sLpROvPdjdq7URTUsTrkV2p5LywKziyLOJznttIwCf8Lihfm1pdwHmypFyZRtErCZ9o4izabYJZQNj%2BOozf6Zf9GK%2Fpdn%2F1FAAyTmb%2BC1h%2FhPFlmVlMxSvu3IFwsi3dGupVdWfvFi%2FMn2S79efRWManOjdqNoyjJjta7brBK0Stwye67P3L18MHiYJOccoOS3fDqr17yZ3N7jk0sPYf8GDp9r%2Bt65OjhwR0MvKE9dslFfUXGvpuHr%2BRwkR7%2BMbL77jC97YdzR35OvLtxev%2FfznB6GGzsjew%2Fi5vJJ6rcn2ORvBcAJ8EutS%2BT9YoYEDn0V%2BFiQ45n5MGCmBhegzgJCSV2fmEdzufp7XdvyzAJJs%2F%2BLB3rjcxAYoujl808SJ%2B5c3i7dIBgdxQ3dGCDzOMgWgdJ%2FE5ekt%2BgaDmBbyX%2FCOe2ZYV7M7f5%2BZRbHIYqWSEHOTF8klRI0nBPC4Ma%2FZQ8HCqACgBBQ1p2y8GPISg6BxNVACYawATAEWzmdurs5GwTbQL68ckjxu8%2FU6hucXH6VL3W2%2BU4Zmfv1NwJ5iBAMKCRiOTHiyCpMAhxrODEmzuFLQ5WfhK%2B0u%2FIAy9%2Fh1EUks9S0qQxNFkM%2FtvoJZ4F%2BV3VYMEOZHTogTAzUPbIYKA9l4fHPole4yx6Zyt%2Fuw1nDMO7MKkQTM6eKldKetOTy9g1vxK7imLdWtV%2FNblmh2UnjTiuTcB1157aA6%2FvFaljNPZ6j92pN5Ee8lQL0bAYnDzQ0SHbmoCYV8gfKhH0x87EHhOrPUgzrzvd5%2Bt9HpaOlcWPOxWsLI5jCIEKAagcAlSqZB6%2FO2OIzTJa%2F3rZSsFF5WgJHi6sB9bCBQq%2BIRQSX19%2BmZiGUG1PeSAoxybu9UGIO3Qy583CxiDEAEIAYBPp%2FZjoK2XepaIvS69UXqsqBXSEk7akAkN5bSFoHZk74sUB0sVNFVSZKOW0uVQJVin%2FTfjFJjNQEW4b4Beqv7RRUCi%2FI9m6ZSUD8NBhrDR5SgYfp%2FDUWKlA0Vc%2FVrbkAHTQOwauHKfQ2AR2ekVED3RIoOKdQoHqteoU37yHfX9NslcomBFhnFqIp2NFKAhOT%2Bwjr%2BD0fxrtDlRdQvL0Z1I1RjWnv8roRaw3N%2F2hPHSGXW84Hael7SD98ddj6gh3j5OufWdDT2ixmtNMuprTOFUu0lRIMBJR5yoC5NHp05qK6ljmtP50Np4sddj00FxP8%2Bs3NalMLreriRl%2B60pZXWkvbEEpe429FaBzCvHfQmNAsc5yEalpXWr803SWpJr%2BgZg1HZ2lUZx%2FFCO3kasgLxcCDnBis3ddwEG7WyDg54lkwYC34wgAzrpCgA17YCCBvMDF67SDDLZVFKZfMWu59u0TOpveW2w%2Bq%2Bc1n4%2FnmObbiUUhRG0l0GW6m8Hobp1tgpzqbgY7A9gEJtDdYI3kDNzvaTulWFgmh0%2Fk%2F9QeDDjVZMt9FQANhgLssNWGx%2FFF3gGLlJ4z2W8Jmzj9R3dMDrrew2hsD3sENt1fpwBsfm2feYGozULcUJmpySvEea6B2EhfCzco%2Fs%2FOtRXxqulUcDEJLR8ubJGTURCH5GOn0f2CkFM4CxVyDKkhh8nwRl3lZSpHJkgDIQfWMde4RmwyVYahtJemC5avvJrGlkQI4TLCRzHpo02S1Gp5uXgudpOk1DCD2TBj1AwzbMfpcC4%2BzGgKIPjeHdoD9x%2B7zNMwKbe9TZjZrGOcuN9JRFrWRK0TNS%2F2JWdZpvyt3d%2Bw2JzB%2BpHA6X%2FpJvBTiZJFyqdY1iUFlAoCSRGwt%2BvaeAFwntx0wu3xAqvgsdN3J%2FtF1fuB13eH0jOFodGZwkIwUyClqVQhtoL7opsSi%2Fq%2BKrw0uS0lpm63areUmF1aZoPOBOu70djr5jvxR3Zf%2FpezWF9CHU7l0ZgzFdD%2F3s6kcZol2dSQ5Uw6U26WrJ%2FtTYwgtJrTcZjzZY3BwY869%2Fu9Ps5Pd%2BpNvBv1HrpWm11GJvUjxPnqwcFGtRlFtGcxrPha8avT%2FaPqC1iqSjMRGwHrLpKDkVBzq%2BQYFjXX2PfSgZ9g6CdNNb4wT%2Bu6w2n6dfQvk6DZziDifT%2BOu84jYuMgFrEZrUi2iEq1t8pn%2FcH29qNjXlSSK3eBY9TdsWAidiR2b6%2FAqASLo2tc0LAAZMVKTRtR6bzNbZK%2FysTznAwZaflcORYwz26HMZUiKYMa85xiNtE9eunZx9JOyD6CPIGcln%2FRJoOw%2FMNAqvM%2F%3C%2Fdiagram%3E%3C%2Fmxfile%3E">
+        </iframe>
+
+        <a class="back" onclick="volverMenu()">
+            VOLVER AL MENU
+        </a>
+
+    </section>
+
+
+    <section id="clientes" class="diagram hidden">
+
+        <h2>CLIENTES</h2>
+
+        <iframe
+            frameborder="0"
+            style="width:100%;height:770px;"
+            src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=#R%3Cmxfile%3E%3Cdiagram%20id%3D%22hz8fWx_6Ezmg5WfYo4_X%22%20name%3D%22P%C3%A1gina-1%22%3E7Zpbc6IwFMc%2FjY%2FtQBAvj6xSlxkvO2B3232jklVmEDqI1e6n3wDhkpy4VQtiu%2FvSJgcIye9%2FkpwcbCmD9X4U2s%2BrSeBgr4UkZ99Shi2EZFVtk3%2Bx5ZVaeipKLcvQdaitMFjub0yNErVuXQdvmBujIPAi95k1LgLfx4uIsdlhGOzY234FHvvWZ3uJgcFa2B60%2FnCdaJVae6hb2L9id7nK3ix3%2BumVtZ3dTEeyWdlOsCuZFL2lDMIgiNLSej%2FAXkwv45I%2Bd3fgat6xEPvRMQ9Q7i%2B2t6VjM6bGwJjR3kWv2ZDJY4QuqXzZrdwIW8%2F2Ir6yIwoT2ypae6QmkyJtEIcR3h%2FslJwPlTgJDtY4Cl%2FJLdkDGR3qHwqt7grWskptqxLn7D6byrvMWy4IkAKFIAaiACBDQxuZ2kQj1qFO%2FgzGhj6d61YLkcYkUx9rhNdUGxJmUnzTOP6jDScEpDVPrgGYBE3EUrM9d%2BmT8oIgwiExxABd4nEavbB2Hcc7hD8Mtr6D4xFI1SiAOAVukECCXk0StIEE%2BrjgTkrGdG7OhveDuGzdW7Ew2nxmAcwslgv4raIy1HoCaEgArVMBtA6A9l0bG0PNTHjdzcyJ2BUvz4j1LPmSkLoA0nhWch%2FJigFJCThSV%2B4grVWwftpuGvGmnECZlCwglRvfg6oHUFnGx1vHFIn1NqRChp2alrE%2BIDiF2%2BrVE0TNAczcuERwMrPmZrKm6aY5MxtfzW5kLlIRzdG6VjNZBnwAEOw7Whzwkpof%2BJgFgPdu9BCzulVp7bF0ZbinGJPKK%2BNS2AEBMoeM9CLYhgsmcIcYS5hEAV1mC7FnR%2B4L%2B0oROvqGb4FLOlOspN0DKmVNpF2lT5WjZa4hlW1Hlbh2Ijtc4gi0kwiZj%2Fo4bWFgfqK2PnnXQ6ZgXHkslI6rhbxJ7XR908GWQram5L3pcSEFv%2F8dKy%2B%2F2Cl8QxXqC88Zp%2Bl7rE5NifLWVDlWE17cOuccPHh8Lk3eZHmuKGDGVSgKDETP3ORKW1yx4VW5yXUb3eP69exxiqzWJi2MkP8m7cKzNxt3cd6UY7erZsMRQPjc7ap9se0q2xjfPQvly8xCVu60s9cSfaL%2BmXorIDypbWpm8pb0Hsymc2N6rzV%2F6EJ9Hii6pSTKxy5JIGlbPazesccuQYp4RLCkqbY8Sdk0I26Hbmc0LnEwFWRwR%2FpUTw7uHS%2FOdzyFpLSMS9pgfq%2BNfybwTH1kkPM9zJI07WGqfEl6KqCXpz2ujEvnolxgivvOaD6hna%2FClElXwKSuj1WChDbgcSUZINqxq0kagJxQVUkD4OsV7sqVnYVOkLtIJBW5o8fytXcnkspu0oZu0vkUbiL32WUib7gGNzntXPUR3aQD3aTR0zfivzPxq%2FvRqwn3eRTVl%2B7K3vSe4%2Ff1e4po40kj%2BMaWFC40V%2FiV4Fxfyc%2BHNfjKaZ%2BaKvOVMzVXBJo3G23wmddzcwC85mq7Ps3RP7E%2BCCKO9AT231dO8JXTPmd9VF9RBb7SbHh6%2Fb5CqsXPWdPbi18FK%2Fof%3C%2Fdiagram%3E%3C%2Fmxfile%3E">
+        </iframe>
+
+        <a class="back" onclick="volverMenu()">
+            VOLVER AL MENU
+        </a>
+
+    </section>
+
+
+    <section id="negocio" class="diagram hidden">
+
+        <h2>NEGOCIO</h2>
+
+        <iframe
+            frameborder="0"
+            style="width:100%;height:853px;"
+            src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=#R%3Cmxfile%3E%3Cdiagram%20id%3D%22wwhSoOHh-2CoQzHCV8MD%22%20name%3D%22P%C3%A1gina-1%22%3E7Zpdk5owFIZ%2FjZft8CGolymylhnFHXDbtXcUUmUGwUFctb%2B%2BQYIQDtZPhN3ZGyWHr%2FC87wkn0ZaoLLaD0FrOR4GDvZbAOduW2G8JgtzhyWcc2CUBvstxSWQWug6NZQHT%2FYtpMD1s7Tp4xRwYBYEXuUs2aAe%2Bj%2B2IiVlhGGzYw%2F4EHnvXpTXDIGDalgejP10nmifRrtDJ4t%2BxO5und%2BblXrJnYaUH0ydZzS0n2ORCotoSlTAIomRrsVWwF8NLuSTnPR3Ze%2BhYiP3onBOE5IQ3y1vTZ9N0TdHGtHfRLn1kchqhSxrfNnM3wubSsuM9GyIwic2jhUdaPNmkF8RhhLdHO8UfHpV4BAcLHIU7cgg9QUjtQP0h0eYmYy3T0DyHWaQxi6o7O1w4A0A2KINyHiLg0dfQwEAjRKLPyIi%2FFDRUXobIIJuaPjBUc2ySzb5KPobx%2FhEyFAQAEhwRS8ry3JlPtm2CBYckEENzicsQ3bFwHcc7hjwM1r6D425zd6IuthnqX3iInWRqNdzbgLuhDjRzYuwx%2F1D1CSTKEqjelnyHtSUvlAASSgDJdwAkAUDjbxNVV2M8z4a6T1luunenPtH6qN84XEKZn6rCJQNcuaydjCdomKZsM70lcg%2BE1QGwJhqx1p6QqbwQQOOW%2BAQZzYPF7%2FXqQXwkhk%2B7jA9fwucA7RZAXQDI1N7fAC%2BK3EmGVb1Xe4CgDmuMxhNs1wcw9XZ%2BRBuTkV5%2FiYe0mkevgrEkEXKpqnDgecAlXzlourGvG0pHxBcYpW%2F0%2FADGlUBq3wMSLPORMnlBQ%2B1XvoxtACR2lJdLKqxeVYxg6T8apzYaIB3piobM2hEJPbZK7zyyUOBhmf6k6bUzKb7YuiWVZmXjMizMAQ%2FsOyhedSAtP%2FAx%2B%2Fx460avMaqvEm1Nc3v6W0px39gxrzLsgFWKAjHSi2Ad2szqCaSYoySVUEpjIfasyH1jb1mGjt7hOXBJZzLjyqxIcrdAP%2BkqPUvILVkULlSolLtFFSMrnOEIXGcv5OGpz9MWziL%2Bp63tWauVaxfk9cntXlMR48Y0EztuZgrvW5dLnDxvPkHrkviUMucqXHxXyhVKDOc%2BV6ZvLnmzVL5n%2BnaalL0Sf6W2EnuddvG1dEdp4ZzjhuzNEnbK5Otds7fWAfqUMtdmb4USp3XOzdnLf2bvedp2HqctnNg1PX2PVKmP0fikNE3MXzgvvVzjK%2Brn6n3B1N1lXhE%2BxnjwQK%2FA%2BflH9IpQ4hWxSV65et72wKq%2B5OfEj%2BgVscQrtU4A36VX7jHJb7xXSoaVRjnl8FPKrU4RpeqcctlawTt1Shs6Rfp0yoVOgT8YP8Qp1ykuQcXlT8UvVPwei02NHxtk6JRGrWs00Cmkmf2bMzk8%2B0%2BsqP4D%3C%2Fdiagram%3E%3C%2Fmxfile%3E">
+        </iframe>
+
+        <a class="back" onclick="volverMenu()">
+            VOLVER AL MENU
+        </a>
+
+    </section>
+
+
+    <section id="casos" class="diagram hidden">
+
+        <h2>USE CASE DIAGRAM</h2>
+
+        <iframe
+            frameborder="0"
+            style="width:100%;height:783px;"
+            src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=&dark=auto#R%3Cmxfile%3E%3Cdiagram%20id%3D%22Jxhuo_njuauoDlDPFU5X%22%20name%3D%22P%C3%A1gina-1%22%3E7Vxbc5s4FP41ntl9qAdx96PjpGlm2t1s0%2B22jxQUW7MYeYVInP76lQzY6JjalCIb3ObBQcdYgu980rnowMiaLde3LFgt3tEIxyPTiNYj63pkmr5tiE8peMkFyDfcXDJnJCpkO8ED%2BYoLYfHDeUYinConckpjTlaqMKRJgkOuyALG6LN62iON1VFXwRzvCR7CIN6X%2FkMivijuy%2FR28jeYzBflyMid5N8sg%2FLk4k7SRRDR54rIuhlZM0Ypz4%2BW6xmOJXglLvnvXn%2Fj2%2B2FMZzwJj9YvKGE%2FfnM3Cy%2B%2Fro2X98%2BMetVTS%2BFKOUvJQbiylfyMFvG05BTNrKunjDjRKD0NviC43uaEk5oIk75Qjmny8oJ05jM5RecroR0wZexaCBxSDMekwTPtnozhDAf%2BimIs2Loe0bnLFgK5FjxnegXrytXWtzsLaZLzNmLOGVR0YdpFeg%2F75SHSo0U3ZhO0S44Wv4kKKgz33a9Q1ccFAB%2FB9hmE7BFP4LbonH1vCAcP6yCUH7zLKaXCuBGK3dJKuZHIQnSVQ7lI1njqA7OVhj6%2BxD6KoK2rSKIHE0IWk0QFPfGVajqkEw5o%2F8K%2BsWSz9cJTSTkjySOgSgoCByKETGrYfaSRJEc%2BorRLIkk7vVUnjEcCEksP4LVqpUqatjsAlUAMtu6yGz%2FNGSeuJogdAbM5rcbGoc8Ez1%2BlcdCcdLoJZgFuTlOeSDGOBHNdza%2FayUVysfRnp%2BwrzWasRAft7bVCZJEU%2BmlSJXEQZqSUNU1XhP%2BSepg7BStz0rrel0oaNN4qTTuMSMCAankXJYINGRXr4yxYaJSknfnls1df5vWS7UFe8xvhgdsjvlxqwcm7mEClNplOA44eVKRr7DCObC6FSPcUyLUtCWO5QPiINBFrsTiV1V3CnRkW2CZcEFHOTB7HW1IuL3t9rz0LpGXtqvy0nQ9jcy0fzHzB5n5mc6CmRV%2B%2BPT48eOHN%2BwPboZ3vY8pZjHBbS3T1p86EE84MJ4wO3CHa5H%2BeQIKQxeEQ44ophX3axdWnNkTQ12Ez7Wqsi%2FN4hmqsXOOmLp9q3ZoUeiJVbMN6Ki3tGqOgdSOHODxa7ZqjYK1Ia61Plhr7S6yN7UQugNea9%2FjORGDyhU1zVK5ygaciv%2Bv7xISko0Yp9Jf0bPK%2BjCt00Vep1ZJXhMlXQLPHehfdwahP2Ce%2F5UJ51iIsvQEyUrIasfStfSgRn7eEGntuQBDXxuGjVK%2BPeX1R7yBKPeHs5hLYq8YjbJws4xrobfnqapxta046GK9k20WRLvhQ8Wy%2Fb3xxaEcyPfEF7VRwfabb6W%2FOotKRs2iC6dW8WfLmU06ii7syXmjCzTpIfmOh6Qnp5%2FXK%2FrZcHEyWtPPVDuClkIz%2Fcpp84t%2Bh%2BlXupF94R9Irtjtlz9H7cj1Tss%2FdF7%2BnZxHPTOjMIaAOdzGPIIxNrwW3TxqlGIaoh%2B8ndolshNdfrA5aYJhT8O86ZzhOYjtjEDecyirQUfF7khIlysW6Ir74Aasqy2jap3Zbne%2FJ6IWpnSzI2L1a6Mfeo2O13a1NdHYUR1Hx%2FfGrrH7O20UY12KGd85pDsftENClmaqL4S0jtiWxnt0wI30%2FMlp%2BXexRanmMQ%2BtO5My5KrU91iph8jNvCYrbwKPzHa1Wfkhb5zOKvl2HJFIW7Z9b4po04dtNtHHGSvcptGSJJvt6tbPzTSoc0MGQBx1UINdD%2FiQq7Su76a376fvpkJ6fSM%2BZg%2FThz8fytbfm%2BMWGkJGjYbAlHDBBtQrpG0HqvQ6Ls%2F0TiDLYZKtOwyHTPO6yFvLOj8BpEbadgSdi3UnJ47qqGvzJp0he5OnKe2auKouYLV%2Bd7q42OQoXBI6eQC1HsNG5XE95XO1Xlz%2FKq2yupMHUetV0qjcboi0RibYTtH2IIkz5Jz%2FyHRjeV3pKkiUC3b%2Fy%2BTLFa7CfGDpgbP5l98EpgIlo%2Fz3%2B6bP8lxxNJf%2Fb2IiYigwU%2FJxBML5UPmZmiYQgq8lOJTX%2B7Gy7EYPbA10AqllPUhfbXujnEBPZ9AtTmUm4hR2YY%2FW%2Bp4Xci%2B25neP1%2FocHnfIRb%2BV3OOT6Evbhi%2Falgtq93bclu8jOJjIPPOW7xj55qiyy4bGhu2PDu%2B0NXzu%2B2BQ2pPtNx8kmPbI03T7bQI2lhHcx9O8%2Fea2fCdBn7k56n731%2BlXESFCnq3SBvbRlH%2FIAOXYe%2Blm3QTssor6ggnYr%2FIDhI65hM0JCHP11mkLEMo81AURUL6WxfIVFo49t6MXBh1M6PSGnpapkspvTU%2F41ioPvFpMNz27rM%2FqBz0FO5GlshP5Otnp9sx6mzZgZ1vvESHoh1onZqd1eexUwppurHeZrusLASFtkANyEY0JaHqe2lNn7qNo7l60m5%2B%2Be12xdfM%2F%3C%2Fdiagram%3E%3C%2Fmxfile%3E">
+        </iframe>
+
+        <a class="back" onclick="volverMenu()">
+            VOLVER AL MENU
+        </a>
+
+    </section>
+
+
+    <script>
+
+        function mostrarDiagrama(diagrama) {
+
+            document.getElementById("inicio").classList.add("hidden");
+
+            document.getElementById("idea").classList.add("hidden");
+
+            document.getElementById("clientes").classList.add("hidden");
+
+            document.getElementById("negocio").classList.add("hidden");
+
+            document.getElementById("casos").classList.add("hidden");
+
+            document.getElementById(diagrama).classList.remove("hidden");
+
+            window.scrollTo(0, 0);
+        }
+
+
+        function volverMenu() {
+
+            document.getElementById("idea").classList.add("hidden");
+
+            document.getElementById("clientes").classList.add("hidden");
+
+            document.getElementById("negocio").classList.add("hidden");
+
+            document.getElementById("casos").classList.add("hidden");
+
+            document.getElementById("inicio").classList.remove("hidden");
+
+            window.scrollTo(0, 0);
+        }
+
+    </script>
+
+</body>
+
+</html>
